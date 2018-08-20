@@ -113,3 +113,23 @@ spinWords( "This is another test" )=> returns "This is rehtona test"
 
 	def spin_words(sentence):
     return " ".join([x[::-1] if len(x) >= 5 else x for x in sentence.split(" ")])
+
+# 6 
+
+Description:
+Your task is to make a function that can take any non-negative integer as a argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
+
+Examples:
+Input: 21445 Output: 54421
+
+Input: 145263 Output: 654321
+
+Input: 1254859723 Output: 9875543221
+
+## Best Solutions :
+
+	def Descending_Order(num):
+    return int("".join(sorted(str(num), reverse=True)))
+    
+    def Descending_Order(num):
+    return int(''.join(sorted(str(num))[::-1]))
