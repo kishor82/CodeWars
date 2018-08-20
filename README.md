@@ -133,3 +133,22 @@ Input: 1254859723 Output: 9875543221
     
     def Descending_Order(num):
     return int(''.join(sorted(str(num))[::-1]))
+
+# 7 
+
+Description:
+Return the number (count) of vowels in the given string.
+
+We will consider a, e, i, o, and u as vowels for this Kata.
+
+The input string will only consist of lower case letters and/or spaces.
+
+## Best Solutions :
+
+	public class Vowels {
+    	public static int getCount(String str) {
+        	return str.replaceAll("(?i)[^aeiou]", "").length();
+    	}
+	}
+
+The (?i) at the beginning make the regex case insensitive
